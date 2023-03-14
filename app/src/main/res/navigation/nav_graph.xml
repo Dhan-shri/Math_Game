@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dhanshri.mathgame.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_down"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_subFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_down"
+            app:destination="@id/subFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_multiFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_down"
+            app:destination="@id/multiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_divFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_down"
+            app:destination="@id/divFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.dhanshri.mathgame.fragments.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/subFragment"
+        android:name="com.dhanshri.mathgame.fragments.SubFragment"
+        android:label="fragment_sub"
+        tools:layout="@layout/fragment_sub" />
+    <fragment
+        android:id="@+id/multiFragment"
+        android:name="com.dhanshri.mathgame.fragments.MultiFragment"
+        android:label="fragment_multi"
+        tools:layout="@layout/fragment_multi" />
+    <fragment
+        android:id="@+id/divFragment"
+        android:name="com.dhanshri.mathgame.fragments.DivFragment"
+        android:label="fragment_div"
+        tools:layout="@layout/fragment_div" />
+</navigation>
